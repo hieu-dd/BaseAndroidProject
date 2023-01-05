@@ -17,7 +17,6 @@ abstract class BaseAndroidTest {
 
     @Before
     fun setUp() {
-
         composeRule.activity.setContent {
             MainScreen()
         }

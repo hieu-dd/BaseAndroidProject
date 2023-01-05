@@ -48,7 +48,6 @@ kotlin {
         val androidTest by getting {
             dependencies {
                 implementation(libs.bundles.core.androidTest)
-                implementation("com.squareup.sqldelight:sqlite-driver:1.5.3")
             }
         }
         val iosX64Main by getting
