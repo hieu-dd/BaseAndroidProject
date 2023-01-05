@@ -13,19 +13,18 @@ import org.koin.core.context.startKoin
 import org.koin.core.module.Module
 import org.koin.dsl.module
 
-fun initKoin(appModule: Module, contextModule: Module): KoinApplication {
+fun initKoin(appModule: Module, platform: Module = platformModule): KoinApplication {
     val koinApplication = startKoin {
         modules(
             appModule,
-            contextModule,
-            platformModule,
+            platform,
             coreModule,
         )
     }
     return koinApplication
 }
 
-private val coreModule = module {
+val coreModule = module {
     single {
         DatabaseHelper(
             get(),

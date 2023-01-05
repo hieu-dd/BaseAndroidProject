@@ -15,6 +15,7 @@ android {
         targetSdk = libs.versions.targetSdk.get().toInt()
         versionCode = 1
         versionName = "1.0"
+        testInstrumentationRunner = "com.d2brothers.note.InstrumentationTestRunner"
     }
     buildFeatures {
         compose = true
@@ -57,5 +58,37 @@ dependencies {
     implementation(libs.koin.compose)
     implementation(libs.compose.destination.core)
     ksp(libs.compose.destination.ksp)
-    testImplementation(libs.junit)
+
+
+    androidTestImplementation("androidx.test.ext:junit:1.1.4")
+    androidTestImplementation("androidx.test.espresso:espresso-core:3.5.0")
+    androidTestImplementation("androidx.compose.ui:ui-test-junit4:1.2.1")
+    debugImplementation ("androidx.compose.ui:ui-tooling:1.2.1")
+    // Local unit tests
+    testImplementation("androidx.test:core:1.5.0")
+    testImplementation("junit:junit:4.13.2")
+    testImplementation("androidx.arch.core:core-testing:2.1.0")
+    testImplementation("org.jetbrains.kotlinx:kotlinx-coroutines-test:1.6.4")
+    testImplementation("com.google.truth:truth:1.1.3")
+    testImplementation("com.squareup.okhttp3:mockwebserver:4.9.1")
+    testImplementation("io.mockk:mockk:1.10.5")
+    debugImplementation("androidx.compose.ui:ui-test-manifest:1.4.0-alpha03")
+
+    // Instrumentation tests
+    androidTestImplementation("junit:junit:4.13.2")
+    androidTestImplementation("org.jetbrains.kotlinx:kotlinx-coroutines-test:1.6.4")
+    androidTestImplementation("androidx.arch.core:core-testing:2.1.0")
+    androidTestImplementation("com.google.truth:truth:1.1.3")
+    androidTestImplementation("androidx.test.ext:junit:1.1.4")
+    androidTestImplementation("androidx.test:core-ktx:1.5.0")
+    androidTestImplementation("com.squareup.okhttp3:mockwebserver:4.9.1")
+    androidTestImplementation("io.mockk:mockk-android:1.10.5")
+    androidTestImplementation("androidx.test:runner:1.5.1")
+    testImplementation("com.squareup.sqldelight:sqlite-driver:1.5.4")
+
+
+    // Koin Test features
+    testImplementation("io.insert-koin:koin-test:3.3.2")
+    testImplementation("io.insert-koin:koin-test-junit4:3.3.2")
+    testImplementation("io.insert-koin:koin-test-junit5:3.3.2")
 }

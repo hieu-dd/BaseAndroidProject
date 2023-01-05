@@ -5,6 +5,7 @@ buildscript {
         gradlePluginPortal()
         google()
         mavenCentral()
+        jcenter()
     }
     dependencies {
         classpath("org.jetbrains.kotlin:kotlin-gradle-plugin:1.7.10")
@@ -17,6 +18,7 @@ allprojects {
     repositories {
         google()
         mavenCentral()
+        jcenter()
     }
 }
 

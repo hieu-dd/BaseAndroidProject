@@ -3,7 +3,6 @@ package com.d2brothers.core.domain.repository
 import com.d2brothers.core.data.model.Note
 import com.d2brothers.core.data.model.toDomainModel
 import com.d2brothers.core.domain.data_source.database.DatabaseHelper
-import kotlinx.coroutines.flow.flow
 import kotlinx.coroutines.flow.map
 
 class LocalNoteRepositoryImpl(private val databaseHelper: DatabaseHelper) : NoteRepository {

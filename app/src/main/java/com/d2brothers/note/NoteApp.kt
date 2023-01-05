@@ -11,11 +11,6 @@ class NoteApp : Application() {
         super.onCreate()
         initKoin(
             appModule(this@NoteApp),
-            module {
-                single<Context> {
-                    this@NoteApp
-                }
-            }
         )
     }
 }
