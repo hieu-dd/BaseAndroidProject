@@ -33,7 +33,8 @@ kotlin {
         }
         val commonTest by getting {
             dependencies {
-                implementation(kotlin("test"))
+                implementation(libs.bundles.core.commonTest)
+                implementation( "com.varabyte.truthish:truthish:0.6.3")
             }
         }
         val androidMain by getting {
@@ -41,9 +42,14 @@ kotlin {
                 implementation(libs.androidx.lifecycle.viewmodel)
                 implementation(libs.sqlDelight.android)
                 implementation(libs.ktor.client.okHttp)
+
             }
         }
-        val androidTest by getting
+        val androidTest by getting {
+            dependencies {
+                implementation(libs.bundles.core.androidTest)
+            }
+        }
         val iosX64Main by getting
         val iosArm64Main by getting
         val iosSimulatorArm64Main by getting
@@ -68,6 +74,13 @@ kotlin {
             iosArm64Test.dependsOn(this)
             iosSimulatorArm64Test.dependsOn(this)
         }
+    }
+}
+
+sqldelight {
+    database("NoteDatabases") {
+        packageName = "com.d2brothers.note.database"
+        sourceFolders = listOf("sqldelight")
     }
 }
 
