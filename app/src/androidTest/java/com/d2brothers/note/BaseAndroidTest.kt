@@ -2,7 +2,9 @@ package com.d2brothers.note
 
 import androidx.activity.compose.setContent
 import androidx.compose.ui.test.junit4.createAndroidComposeRule
+import com.d2brothers.note.database.NoteDatabases
 import com.d2brothers.note.presentation.MainScreen
+import com.squareup.sqldelight.sqlite.driver.JdbcSqliteDriver
 import org.junit.After
 import org.junit.Before
 import org.junit.Rule
@@ -15,6 +17,7 @@ abstract class BaseAndroidTest {
 
     @Before
     fun setUp() {
+
         composeRule.activity.setContent {
             MainScreen()
         }

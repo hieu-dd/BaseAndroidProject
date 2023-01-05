@@ -59,11 +59,11 @@ dependencies {
     implementation(libs.compose.destination.core)
     ksp(libs.compose.destination.ksp)
 
-
+    implementation(libs.sqlDelight.android)
     androidTestImplementation("androidx.test.ext:junit:1.1.4")
     androidTestImplementation("androidx.test.espresso:espresso-core:3.5.0")
     androidTestImplementation("androidx.compose.ui:ui-test-junit4:1.2.1")
-    debugImplementation ("androidx.compose.ui:ui-tooling:1.2.1")
+    debugImplementation("androidx.compose.ui:ui-tooling:1.2.1")
     // Local unit tests
     testImplementation("androidx.test:core:1.5.0")
     testImplementation("junit:junit:4.13.2")
@@ -84,8 +84,8 @@ dependencies {
     androidTestImplementation("com.squareup.okhttp3:mockwebserver:4.9.1")
     androidTestImplementation("io.mockk:mockk-android:1.10.5")
     androidTestImplementation("androidx.test:runner:1.5.1")
-    testImplementation("com.squareup.sqldelight:sqlite-driver:1.5.4")
-
+    androidTestImplementation("com.squareup.sqldelight:sqlite-driver:1.5.4")
+    androidTestImplementation("org.xerial:sqlite-jdbc:3.8.10.2")
 
     // Koin Test features
     testImplementation("io.insert-koin:koin-test:3.3.2")
