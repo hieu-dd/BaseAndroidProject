@@ -2,7 +2,9 @@ package com.d2brothers.core.domain.data_source.database
 
 import com.d2brothers.core.data.model.Note
 import com.d2brothers.note.database.NoteDatabases
+import com.squareup.sqldelight.runtime.coroutines.asFlow
 import kotlinx.coroutines.CoroutineDispatcher
+import kotlinx.coroutines.flow.map
 
 class DatabaseHelper(
     databaseDriverFactory: DatabaseDriverFactory,
@@ -11,7 +13,7 @@ class DatabaseHelper(
     private val database = NoteDatabases(databaseDriverFactory.createDriver())
     private val dbQuery = database.noteQueries
 
-    fun getAllNotes() = dbQuery.getAllNotes().executeAsList()
+    fun getAllNotes() = dbQuery.getAllNotes().asFlow().map { it.executeAsList() }
 
     fun getNoteById(id: Long) = dbQuery.getNoteById(id).executeAsOneOrNull()
 
