@@ -6,7 +6,7 @@ import androidx.compose.ui.graphics.toArgb
 import androidx.lifecycle.SavedStateHandle
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.d2brothers.core.data.model.Note
+import com.d2brothers.core.domain.model.Note
 import com.d2brothers.core.domain.use_case.NoteUseCases
 import com.d2brothers.note.util.NoteUtils.noteColors
 import kotlinx.coroutines.flow.MutableSharedFlow

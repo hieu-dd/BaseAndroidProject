@@ -4,7 +4,7 @@ import androidx.compose.runtime.State
 import androidx.compose.runtime.mutableStateOf
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.d2brothers.core.data.model.Note
+import com.d2brothers.core.domain.model.Note
 import com.d2brothers.core.domain.use_case.NoteUseCases
 import com.d2brothers.core.domain.util.NoteOrder
 import com.d2brothers.core.domain.util.OrderType

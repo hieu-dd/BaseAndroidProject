@@ -2,7 +2,7 @@ package com.d2brothers.note
 
 import android.app.Application
 import androidx.test.platform.app.InstrumentationRegistry
-import com.d2brothers.core.domain.data_source.database.DatabaseDriverFactory
+import com.d2brothers.core.data.data_source.database.DatabaseDriverFactory
 import com.d2brothers.core.initKoin
 import com.d2brothers.note.di.appModule
 import org.koin.android.ext.koin.androidContext

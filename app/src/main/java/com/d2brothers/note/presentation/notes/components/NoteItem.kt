@@ -26,7 +26,7 @@ import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.dp
 import androidx.core.graphics.ColorUtils
 import androidx.compose.ui.graphics.Path
-import com.d2brothers.core.data.model.Note
+import com.d2brothers.core.domain.model.Note
 
 @Composable
 fun NoteItem(

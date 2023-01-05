@@ -1,8 +1,9 @@
-package com.d2brothers.core.domain.repository
+package com.d2brothers.core.data.repository
 
-import com.d2brothers.core.data.model.Note
-import com.d2brothers.core.data.model.toDomainModel
-import com.d2brothers.core.domain.data_source.database.DatabaseHelper
+import com.d2brothers.core.domain.model.Note
+import com.d2brothers.core.domain.model.toDomainModel
+import com.d2brothers.core.data.data_source.database.DatabaseHelper
+import com.d2brothers.core.domain.repository.NoteRepository
 import kotlinx.coroutines.flow.map
 
 class LocalNoteRepositoryImpl(private val databaseHelper: DatabaseHelper) : NoteRepository {

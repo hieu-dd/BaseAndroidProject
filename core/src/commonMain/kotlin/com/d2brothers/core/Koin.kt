@@ -1,7 +1,7 @@
 package com.d2brothers.core
 
-import com.d2brothers.core.domain.data_source.database.DatabaseHelper
-import com.d2brothers.core.domain.repository.LocalNoteRepositoryImpl
+import com.d2brothers.core.data.data_source.database.DatabaseHelper
+import com.d2brothers.core.data.repository.LocalNoteRepositoryImpl
 import com.d2brothers.core.domain.use_case.AddNote
 import com.d2brothers.core.domain.use_case.DeleteNote
 import com.d2brothers.core.domain.use_case.GetNote

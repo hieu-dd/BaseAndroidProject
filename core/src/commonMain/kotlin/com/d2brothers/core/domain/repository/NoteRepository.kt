@@ -1,6 +1,6 @@
 package com.d2brothers.core.domain.repository
 
-import com.d2brothers.core.data.model.Note
+import com.d2brothers.core.domain.model.Note
 import kotlinx.coroutines.flow.Flow
 
 interface NoteRepository {

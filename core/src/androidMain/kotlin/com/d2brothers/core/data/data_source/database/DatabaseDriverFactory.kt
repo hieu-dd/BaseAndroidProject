@@ -1,4 +1,4 @@
-package com.d2brothers.core.domain.data_source.database
+package com.d2brothers.core.data.data_source.database
 
 import android.content.Context
 import com.d2brothers.note.database.NoteDatabases

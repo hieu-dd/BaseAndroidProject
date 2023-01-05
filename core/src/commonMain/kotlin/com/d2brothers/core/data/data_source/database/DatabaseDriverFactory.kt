@@ -1,4 +1,4 @@
-package com.d2brothers.core.domain.data_source.database
+package com.d2brothers.core.data.data_source.database
 
 import com.squareup.sqldelight.db.SqlDriver
 

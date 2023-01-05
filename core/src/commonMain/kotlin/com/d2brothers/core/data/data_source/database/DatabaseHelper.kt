@@ -1,6 +1,6 @@
-package com.d2brothers.core.domain.data_source.database
+package com.d2brothers.core.data.data_source.database
 
-import com.d2brothers.core.data.model.Note
+import com.d2brothers.core.domain.model.Note
 import com.d2brothers.note.database.NoteDatabases
 import com.squareup.sqldelight.runtime.coroutines.asFlow
 import kotlinx.coroutines.CoroutineDispatcher

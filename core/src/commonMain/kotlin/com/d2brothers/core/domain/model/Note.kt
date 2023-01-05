@@ -1,4 +1,4 @@
-package com.d2brothers.core.data.model
+package com.d2brothers.core.domain.model
 
 import database.NoteEntity
 

@@ -1,6 +1,6 @@
 package com.d2brothers.note.presentation.notes
 
-import com.d2brothers.core.data.model.Note
+import com.d2brothers.core.domain.model.Note
 import com.d2brothers.core.domain.util.NoteOrder
 
 
