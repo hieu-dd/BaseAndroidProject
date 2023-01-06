@@ -16,6 +16,6 @@ class LocalNoteRepositoryImpl(private val databaseHelper: DatabaseHelper) : Note
     }
 
     override suspend fun deleteNote(note: Note) {
-        note.id?.let { databaseHelper.getNoteById(it) }
+        note.id?.let { databaseHelper.deleteNodeById(it) }
     }
 }

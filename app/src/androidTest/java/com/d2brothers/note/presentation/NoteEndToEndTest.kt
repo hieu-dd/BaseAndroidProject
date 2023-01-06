@@ -40,7 +40,6 @@ class NotesEndToEndTest : BaseAndroidTest() {
             .apply {
                 performTextClearance()
                 performTextInput("text-title2")
-
             }
         // Update the note
         composeRule.onNodeWithContentDescription("Save").performClick()

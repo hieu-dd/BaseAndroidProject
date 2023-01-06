@@ -18,11 +18,12 @@ WHERE id = ?;
 insertNote:
 INSERT OR REPLACE
 INTO NoteEntity(
+    id,
     title,
     content,
     color,
     timestamp
-) VALUES(?, ?, ?, ?);
+) VALUES(?, ?, ?, ?, ?);
 
 deleteNoteById:
 DELETE FROM NoteEntity

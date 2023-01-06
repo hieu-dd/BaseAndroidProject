@@ -18,6 +18,10 @@ class DatabaseHelper(
     fun getNoteById(id: Long) = dbQuery.getNoteById(id).executeAsOneOrNull()
 
     fun insertNote(note: Note) {
-        dbQuery.insertNote(note.title, note.content, note.color,note.timestamp)
+        dbQuery.insertNote(note.id, note.title, note.content, note.color, note.timestamp)
+    }
+
+    fun deleteNodeById(id: Long) {
+        dbQuery.deleteNoteById(id)
     }
 }
