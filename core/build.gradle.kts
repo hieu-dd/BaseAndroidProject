@@ -29,12 +29,14 @@ kotlin {
                 implementation(libs.multiplatformSettings.common)
                 implementation(libs.kotlinx.dateTime)
                 api(libs.touchlab.kermit)
+
             }
         }
         val commonTest by getting {
             dependencies {
                 implementation(libs.bundles.core.commonTest)
-                implementation( "com.varabyte.truthish:truthish:0.6.3")
+                implementation("com.varabyte.truthish:truthish:0.6.3")
+                implementation("io.mockk:mockk:1.12.1")
             }
         }
         val androidMain by getting {
@@ -42,7 +44,6 @@ kotlin {
                 implementation(libs.androidx.lifecycle.viewmodel)
                 implementation(libs.sqlDelight.android)
                 implementation(libs.ktor.client.okHttp)
-
             }
         }
         val androidTest by getting {

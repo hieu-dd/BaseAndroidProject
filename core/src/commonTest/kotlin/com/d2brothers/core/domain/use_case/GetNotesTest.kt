@@ -1,24 +1,30 @@
 package com.d2brothers.core.domain.use_case
 
 import com.d2brothers.core.domain.model.Note
-import com.d2brothers.core.domain.repository.FakeNoteRepository
+import com.d2brothers.core.domain.repository.NoteRepository
 import com.d2brothers.core.domain.util.NoteOrder
 import com.d2brothers.core.domain.util.OrderType
 import com.varabyte.truthish.assertThat
+import io.mockk.every
+import io.mockk.impl.annotations.MockK
+import io.mockk.mockk
 import kotlinx.coroutines.flow.first
+import kotlinx.coroutines.flow.flow
 import kotlinx.coroutines.test.runTest
-import kotlin.test.Test
 import kotlin.test.BeforeTest
+import kotlin.test.Test
 
 class GetNotesTest {
 
     private lateinit var getNotes: GetNotes
-    private lateinit var fakeRepository: FakeNoteRepository
+
+    @MockK
+    private lateinit var mockRepository: NoteRepository
 
     @BeforeTest
     fun setUp() {
-        fakeRepository = FakeNoteRepository()
-        getNotes = GetNotes(fakeRepository)
+        mockRepository = mockk()
+        getNotes = GetNotes(mockRepository)
 
         val notesToInsert = mutableListOf<Note>()
         ('a'..'z').forEachIndexed { index, c ->
@@ -32,9 +38,7 @@ class GetNotesTest {
             )
         }
         notesToInsert.shuffle()
-        runTest {
-            notesToInsert.forEach { fakeRepository.insertNote(it) }
-        }
+        every { mockRepository.getNotes() } returns flow { emit(notesToInsert) }
     }
 
     @Test
