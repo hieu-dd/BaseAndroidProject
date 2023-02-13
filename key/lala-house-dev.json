@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "lala-house-dev",
+  "private_key_id": "fd2a66d75166be6f7ca9c2016fc44dab076a80c1",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQC6v52R9IPcRbM1\ngUVNwOdifpJzIQw0bR9gNXpWod20ccvNiXBZCAjZjotP3ktKqPWsLkXdhg1B2uQV\nCL4o/qHiqWXaACKyJTucTBz/E7ZNl7VQCmTU9oo7hZEa8hn9ZAgUDS9GyCUSynua\nZoXHgbCEYZEQqQrSbxdv/b6JEDbp+mVM9dB1sjlwmeU1u/oePv6iaGXTMcznPp7O\nIubc+wgQyEYM5DLwZKJj5A+n17671HCZ1xgkcF7L1jy9PLvf2Sh3S0XE8TGhlFvX\nkkYBxhbSxQwW/BPLd4wcYM4/9mYew79hL/Jqb2xHI0+I+BxB1eR8P5sQ0i7bgGQ5\nTbztLodxAgMBAAECggEACnZEphIcNwFinks9LjNx4wczPibqT5+TY+jrDyJnUL4V\nTFD4TcyQ7ls5e8J41lhr1vcKq/PgF0HjiDgiqxpEyHV0AsgCKZfDZKiw8StSCbvH\niRHj/zhGmzoK3IcWpKbveuwYK294ADr+vLIkqX4e/POYVGYb+JkHp5sACx6w7N+k\n+Wttp/Ee9EqzNL7PitUU7Y5yfIKNhqP0YwiFZz2yv8fC2M+yfMw9UHg1KPLJGfX7\nl3p738jkTzMFWmq89wS5S5DNvJm3PQqQNR+nrS5leMG4+rBlmUxL0GP9qTEp/Xwv\n7+QaavZYJ0yN/bPB2jOAB4Z461Y3BTuSXvKK0X4ZiQKBgQD+JiaKYr5YviVVjj3i\nNlqXRN0NC6HH5JHkXS66tgTXG/WdKVRdrjdtPKE5REo6oBgNEye7dmWj8JL6nF6s\nPBLGi8QY+O3VbUGLr/L2bfZP5ySaNPKDr/nMa43IGCDFCTeGBd77huwXLoWpYlFE\nILOHnD6tbls4R4lnyIkwWAhWhQKBgQC8G8y5M37Zc58GTB13syK4jVDGFBWc02/A\nMcnIh6o5o4V2wCw1TomEc9Gppgpkb3ilYqGZ81TOuN1ZhqBlfWChR/F8iR00ejP6\nDBcLd1u0/XaOymimREnUa9gBgYyuz1IuruFhfuE19BCSkynSPY7XPis4moqZ4Wyb\nakEhp6rO/QKBgQCwBSBATC9lKxyUatW1bMvFZO5scJf15/qbXWZV7mbfzP+Jf+xs\njZLZ11oaXY/DlsnRlGi6T0AKET7az55KT7j5Rifk29NtNCRnaM8vme00XfRd0Tn9\nts2dpQgng35+uOl5q2tKbaHqVFBChlOeib+Ntss6Nup6yiECfkN19iKgOQKBgFpN\nKiE6FEoFVDDstzSwPRnFVSJRn/JyGfJ0tD5cyh3zXu2b4V0Rv7hi9SJwwApo7MzQ\nJW3HP04htrj0hOlTn+CsrcOv+uInS+5cgW+Ss+aVyqVPi59Npvefccl/TG7avcQF\nVdK82xZQfOgwV2JDBOBVSuBYZ/LpIX8WKgAjAj9tAoGAGGDT9vo9AKzEMHuOsL9D\nYjhNTUXhXpTJSlQwMV1uWtipOmnLXTKVn0dGgy7GZSqbguX3KqJF/rUiMFUtbv5w\nzGyNVdznPvEnqjAK6P59/QTeJRcz7kmmRrBcINWgXE1fo9Ht4hAJ1DFJUCuTdzy/\nailEewezJkAy4K7tuosgojY=\n-----END PRIVATE KEY-----\n",
+  "client_email": "firebase-app-distribution-admi@lala-house-dev.iam.gserviceaccount.com",
+  "client_id": "104685377802945633843",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/firebase-app-distribution-admi%40lala-house-dev.iam.gserviceaccount.com"
+}

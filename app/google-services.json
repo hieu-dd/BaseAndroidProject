@@ -1,0 +1,54 @@
+{
+  "project_info": {
+    "project_number": "650008596603",
+    "project_id": "lala-house-dev",
+    "storage_bucket": "lala-house-dev.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:650008596603:android:8226d08ca71a27e27152de",
+        "android_client_info": {
+          "package_name": "com.d2brothers.note"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "650008596603-vjlu6j83fhu018hlhu9pgmpclk2087n0.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.d2brothers.note",
+            "certificate_hash": "6d205e2b1fce627d5a9a99b8e17c6dfe3e2895cd"
+          }
+        },
+        {
+          "client_id": "650008596603-vcclpj7m53rsr3m1r7uka5ta5gsjlmvn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBI5RgOmK5d96-iDixXiNJTiImPYZFmSDA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "650008596603-kims0v5n95ejaqc50a1pm3kilpj1seh3.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "650008596603-c0j0p2eop5g935h2h0t6af7fnv78oggn.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.project.lalaHouseManager"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

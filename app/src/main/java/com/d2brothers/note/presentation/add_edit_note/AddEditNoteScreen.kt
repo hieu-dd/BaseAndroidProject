@@ -54,9 +54,7 @@ fun AddEditNoteScreen(
         viewModel.eventFlow.collectLatest { event ->
             when (event) {
                 is AddEditNoteViewModel.UiEvent.ShowSnackbar -> {
-//                    scaffoldState.snackbarHostState.showSnackbar(
-//                        message = event.message
-//                    )
+
                 }
 
                 is AddEditNoteViewModel.UiEvent.SaveNote -> {

@@ -1,9 +1,12 @@
-import org.jetbrains.kotlin.kapt3.base.Kapt.kapt
+import com.google.firebase.appdistribution.gradle.firebaseAppDistribution
+
 
 plugins {
     id("com.android.application")
     kotlin("android")
     id("com.google.devtools.ksp") version "1.7.10-1.0.6"
+    id("com.google.gms.google-services")
+    id("com.google.firebase.appdistribution")
 }
 
 android {
@@ -32,8 +35,22 @@ android {
         }
     }
     buildTypes {
-        getByName("release") {
+        release {
             isMinifyEnabled = false
+            firebaseAppDistribution {
+                artifactType = "APK"
+                serviceCredentialsFile = "../key/lala-house-dev.json"
+                releaseNotes = "Sample release notes"
+                testers = "doduchieu.kstn@gmail.com, doduchieu.kstnk57@gmail.com"
+            }
+        }
+        debug {
+            firebaseAppDistribution {
+                artifactType = "APK"
+                serviceCredentialsFile = "key/lala-house-dev.json"
+                releaseNotes = "Sample release notes"
+                testers = "doduchieu.kstn@gmail.com, doduchieu.kstnk57@gmail.com"
+            }
         }
     }
     applicationVariants.all {
@@ -88,4 +105,7 @@ dependencies {
     testImplementation("io.insert-koin:koin-test:3.3.2")
     testImplementation("io.insert-koin:koin-test-junit4:3.3.2")
     testImplementation("io.insert-koin:koin-test-junit5:3.3.2")
+
+    // Firebase
+    implementation(platform("com.google.firebase:firebase-bom:31.2.0"))
 }
