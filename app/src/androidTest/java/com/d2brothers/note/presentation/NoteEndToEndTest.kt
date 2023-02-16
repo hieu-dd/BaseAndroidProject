@@ -47,4 +47,29 @@ class NotesEndToEndTest : BaseAndroidTest() {
         // Make sure the update was applied to the list
         composeRule.onNodeWithText("text-title2").assertIsDisplayed()
     }
+
+    @Test
+    fun testNotesSortByTitleDescendingCorrectly() {
+        for (i in 1..3) {
+            // Click on FAB to get to add note screen
+            composeRule.onNodeWithContentDescription("Add").performClick()
+
+            // Enter texts in title and content text fields
+            composeRule
+                .onNodeWithTag(TestTags.TITLE_TEXT_FIELD)
+                .performTextInput(i.toString())
+            composeRule
+                .onNodeWithTag(TestTags.CONTENT_TEXT_FIELD)
+                .performTextInput(i.toString())
+            // Save the new
+            composeRule.onNodeWithContentDescription("Save").performClick()
+        }
+        composeRule.onNodeWithContentDescription("Sort").performClick()
+        composeRule.onNodeWithContentDescription("Title").performClick()
+        composeRule.onNodeWithContentDescription("Descending").performClick()
+        composeRule.onAllNodesWithTag(TestTags.NOTE_ITEM)[0].assertTextContains("3")
+        composeRule.onAllNodesWithTag(TestTags.NOTE_ITEM)[1].assertTextContains("2")
+        composeRule.onAllNodesWithTag(TestTags.NOTE_ITEM)[2].assertTextContains("1")
+
+    }
 }

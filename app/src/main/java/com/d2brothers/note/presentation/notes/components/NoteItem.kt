@@ -26,7 +26,9 @@ import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.dp
 import androidx.core.graphics.ColorUtils
 import androidx.compose.ui.graphics.Path
+import androidx.compose.ui.platform.testTag
 import com.d2brothers.core.domain.model.Note
+import com.d2brothers.note.ui.TestTags
 
 @Composable
 fun NoteItem(
@@ -38,6 +40,7 @@ fun NoteItem(
 ) {
     Box(
         modifier = modifier
+            .testTag(TestTags.NOTE_ITEM)
     ) {
         Canvas(modifier = Modifier.matchParentSize()) {
             val clipPath = Path().apply {
