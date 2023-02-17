@@ -22,9 +22,7 @@ fun DefaultRadioButton(
     modifier: Modifier = Modifier
 ) {
     Row(
-        modifier = modifier.semantics {
-            contentDescription = text
-        },
+        modifier = modifier,
         verticalAlignment = Alignment.CenterVertically
     ) {
         RadioButton(
